@@ -212,7 +212,6 @@ encoding: "base32",
 return token;
 }
 
-// Generate an OTP
 const otp = generateTOTP(secret.base32);
 const transporter = nodemailer.createTransport({
 name: "smtp.gmail.com",
