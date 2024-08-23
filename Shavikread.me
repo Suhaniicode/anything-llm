@@ -1,0 +1,122 @@
+# Project Setup
+
+## Prerequisites
+Ensure you have Node.js installed. This project uses Node version `v18.12.1`.
+
+## Setup Instructions
+
+### Server
+
+1. **Navigate to the server directory:**
+    ```bash
+    cd server
+    ```
+2. **Install dependencies:**
+    ```bash
+    yarn install
+    ```
+3. **Setup environment variables:**
+    ```bash
+    yarn setup:envs
+    ```
+4. **Run linting:**
+    ```bash
+    yarn lint
+    ```
+5. **Generate Prisma client:**
+    ```bash
+    yarn prisma:generate
+    ```
+6. **Run Prisma migrations:**
+    ```bash
+    yarn prisma:migrate
+    ```
+7. **Seed the database:**
+    ```bash
+    yarn prisma:seed
+    ```
+8. **Setup Prisma:**
+    ```bash
+    yarn prisma:setup
+    ```
+9. **Start the server:**
+    ```bash
+    yarn dev
+    ```
+    If you're using Windows, run this command:
+    ```bash
+    NODE_ENV=development nodemon --ignore documents --ignore vector-cache --ignore storage --ignore swagger --trace-warnings index.js
+    ```
+
+### Frontend
+
+1. **Navigate to the frontend directory:**
+    ```bash
+    cd frontend
+    ```
+2. **Install dependencies:**
+    ```bash
+    yarn install
+    ```
+3. **Setup environment variables:**
+    ```bash
+    yarn setup:envs
+    ```
+4. **Run linting:**
+    ```bash
+    yarn lint
+    ```
+5. **Start the frontend application:**
+    ```bash
+    yarn start
+    ```
+
+### Embed
+
+1. **Navigate to the embed directory:**
+    ```bash
+    cd embed
+    ```
+2. **Install dependencies:**
+    ```bash
+    yarn install
+    ```
+3. **Run linting:**
+    ```bash
+    yarn lint
+    ```
+4. **Start the embed application:**
+    ```bash
+    yarn dev
+    ```
+
+### Collector
+
+1. **Navigate to the collector directory:**
+    ```bash
+    cd collector
+    ```
+2. **Install dependencies:**
+    ```bash
+    yarn install
+    ```
+3. **Run linting:**
+    ```bash
+    yarn lint
+    ```
+4. **Start the collector application:**
+    ```bash
+    yarn dev
+    ```
+    If you're using Windows, run this command:
+    ```bash
+    NODE_ENV=development nodemon --ignore hotdir --ignore storage --trace-warnings index.js
+    ```
+5. **After run project you can visit in root directory index.html double click check chatboat:**
+index.html
+## Accessing the Applications
+
+- **Frontend:** [http://103.186.184.179:3002](http://103.186.184.179:3002)
+- **Server:** [http://103.186.184.179:3001](http://103.186.184.179:3001)
+- **Embed:** [http://localhost:3080](http://localhost:3080)
+- **Collector:** [http://localhost:8888](http://localhost:8888)
